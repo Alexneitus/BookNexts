@@ -51,23 +51,53 @@
     border-radius: 60px;
     width: 120px;
   }
+  /* Estilo base para la sección de misión */
+.seccion-mision {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.seccion-mision img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.seccion-mision .contenido-texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.seccion-mision h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.seccion-mision p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Diseño responsive para pantallas pequeñas */
+@media (max-width: 768px) {
   .seccion-mision {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 2rem;
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .seccion-mision .contenido-texto {
-    flex: 1;
-  }
-  
+
   .seccion-mision img {
-    max-width: 400px;
-    height: auto;
-    border-radius: 8px;
+    max-width: 90%;
   }
+}
+
   p {
     font-size: 20px;
   }
